@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1.tajetaEmbarque/1.tajetaEmbarque.iml" filepath="$PROJECT_DIR$/1.tajetaEmbarque/1.tajetaEmbarque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.Robot/2.Robot.iml" filepath="$PROJECT_DIR$/2.Robot/2.Robot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.pooAlumno/3.pooAlumno.iml" filepath="$PROJECT_DIR$/3.pooAlumno/3.pooAlumno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4.cronometro/4.cronometro.iml" filepath="$PROJECT_DIR$/4.cronometro/4.cronometro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5.GrupoAlumnos/5.GrupoAlumnos.iml" filepath="$PROJECT_DIR$/5.GrupoAlumnos/5.GrupoAlumnos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.CarerraPopular/6.CarerraPopular.iml" filepath="$PROJECT_DIR$/6.CarerraPopular/6.CarerraPopular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Objetos.iml" filepath="$PROJECT_DIR$/.idea/Objetos.iml" />
+    </modules>
+  </component>
+</project>
