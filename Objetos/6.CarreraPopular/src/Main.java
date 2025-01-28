@@ -27,7 +27,7 @@ public class Main {
             System.out.print("Nombre: ");
             String nombre = br.readLine();
 
-            double tiempo = (System.nanoTime() - inicio) - 1_000_000_000;
+            double tiempo = (System.nanoTime() - inicio) / 1_000_000_000.0;
 
             Participante participante = new Participante(dorsal, nombre);
             Marca marca = new Marca(tiempo, participante, carrera);
