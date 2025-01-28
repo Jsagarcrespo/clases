@@ -6,6 +6,11 @@ public class Marca {
     public Participante participante;
     public Carrera carrera;
 
+    public Marca(double time, Participante participante, Carrera carrera) {
+        this.time = time;
+        this.participante = participante;
+        this.carrera = carrera;
+    }
 
     public double getTime() {
         return time;

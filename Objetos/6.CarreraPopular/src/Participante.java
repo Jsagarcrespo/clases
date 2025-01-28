@@ -1,19 +1,18 @@
 public class Participante {
-    private int dorsal;
+    private String dorsal;
     private String nombre;
-    private Carrera carrera;
     public Marca marca;
 
-    public Participante(int dorsal, String nombre) {
+    public Participante(String dorsal, String nombre) {
         this.dorsal = dorsal;
         this.nombre = nombre;
     }
 
-    public int getDorsal() {
+    public String getDorsal() {
         return dorsal;
     }
 
-    public void setDorsal(int dorsal) {
+    public void setDorsal(String dorsal) {
         this.dorsal = dorsal;
     }
 
@@ -25,11 +24,11 @@ public class Participante {
         this.nombre = nombre;
     }
 
-    public Carrera getCarrera() {
-        return carrera;
+    public Marca getMarca() {
+        return marca;
     }
 
-    public void setCarrera(Carrera carrera) {
-        this.carrera = carrera;
+    public void setMarca(Marca marca) {
+        this.marca = marca;
     }
 }
