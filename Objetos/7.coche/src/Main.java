@@ -27,7 +27,7 @@ public class Main {
             System.out.println("cantidad motores = " + cantMotor);
 
             System.out.print("Esta arrancado: ");
-            Boolean arrancado = Boolean.parseBoolean(br.readLine());
+            boolean arrancado = Boolean.parseBoolean(br.readLine());
 
             System.out.print("Potencia: ");
             int potencia = Integer.parseInt(br.readLine());
