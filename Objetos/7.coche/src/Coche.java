@@ -12,7 +12,7 @@ public class Coche {
     private Rueda[] rueda;
 
     //vincular con Puerta
-    private Puerta[] puerta = new Puerta[5];
+    private Puerta[] puerta;
 
     public Coche(String marca, String modelo, int color) {
         this.marca = marca;
