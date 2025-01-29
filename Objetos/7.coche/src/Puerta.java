@@ -5,9 +5,8 @@ public class Puerta {
     //vincular con Coche
     private Coche coche;
 
-    public Puerta(boolean elvalunaElectrico, Coche coche) {
+    public Puerta(boolean elvalunaElectrico) {
         this.elvalunaElectrico = elvalunaElectrico;
-        this.coche = coche;
     }
 
     public Coche getCoche() {
@@ -30,7 +29,6 @@ public class Puerta {
     public String toString() {
         return "Puerta{" +
                 "elvalunaElectrico=" + elvalunaElectrico +
-                ", coche=" + coche +
                 '}';
     }
 }

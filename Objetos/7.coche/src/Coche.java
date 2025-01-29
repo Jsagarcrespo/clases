@@ -18,6 +18,12 @@ public class Coche {
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
+
+        // no olvidarse de esta parte porque si no nos puede reflejar en el codigo que "NullPointerException"
+        // Es necesarion inicializarlo antes de usarlo para que no de error
+        rueda = new Rueda[4];
+        motor = new Motor[2];
+        puerta = new Puerta[5];
     }
 
     public String getMarca() {
@@ -66,5 +72,14 @@ public class Coche {
 
     public void setPuerta(Puerta[] puerta) {
         this.puerta = puerta;
+    }
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color=" + color +
+                '}';
     }
 }

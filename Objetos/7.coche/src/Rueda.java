@@ -1,20 +1,19 @@
 public class Rueda {
 
-    private String diametro;
+    private int diametro;
 
     //vincular con coche
     private Coche coche;
 
-    public Rueda(String diametro, Coche coche) {
+    public Rueda(int diametro) {
         this.diametro = diametro;
-        this.coche = coche;
     }
 
-    public String getDiametro() {
+    public int getDiametro() {
         return diametro;
     }
 
-    public void setDiametro(String diametro) {
+    public void setDiametro(int diametro) {
         this.diametro = diametro;
     }
 
@@ -29,8 +28,7 @@ public class Rueda {
     @Override
     public String toString() {
         return "Rueda{" +
-                "diametro='" + diametro + '\'' +
-                ", coche=" + coche +
+                "diametro='" + diametro  +
                 '}';
     }
 }
