@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec1a1905-87ad-4a9e-b7da-8eb7e794bac9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/src/Coche.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/src/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/src/MotorCombustionInterna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/src/MotorElectrico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/src/Puerta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../8.hibrido/src/Rueda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec1a1905-87ad-4a9e-b7da-8eb7e794bac9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

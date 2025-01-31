@@ -4,27 +4,43 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-    public void visualizar(){}{
-
+    public static void verCartelera(Pelicula[] pelicula) {
+        System.out.println("Cartelera:");
+        for (Pelicula peli : pelicula) {
+            if (peli != null) {
+                System.out.println(peli);
+            }
+        }
     }
+
+    public static void visualizar(Pelicula[] peliculas) {
+        System.out.println("Cartelera:");
+        for (int i = 0; i < peliculas.length; i++) {
+
+            if (peliculas[i] == null) {
+                System.out.println("Posición " + i + ": vacio");
+            } else {
+                System.out.println("Posición " + i + ": " + peliculas[i]);
+            }
+        }
+    }
+
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int contador = 0;
-        Pelicula[] pelicula = new Pelicula[7];
-
-
+        Pelicula[] pelicula = new Pelicula[3];
 
         int opt = 0;
 
         while (opt != 4) {
 
             System.out.print("1. Publicar película\n" +
-                "2. Borrar película\n" +
-                "3. Ver cartelera\n" +
-                "4. Salir\n" +
-                "Opcion:  ");
+                    "2. Borrar película\n" +
+                    "3. Ver cartelera\n" +
+                    "4. Salir\n" +
+                    "Opcion:  ");
 
             opt = Integer.parseInt(br.readLine());
 
@@ -125,66 +141,35 @@ public class Main {
 
                     }
 
-                    System.out.print("Sala: ");
-                    int sala = Integer.parseInt(br.readLine());
-
                     // Aqui nos dara problemas ya que gen y cal no espera tener valores nulos
                     // con lo que cuando los declaremos los tenemos que dar valor de "null"
-                    pelicula[contador] = new Pelicula(titulo, anyo, duracion, gen, cal );
+                    System.out.println(contador);
+                    pelicula[contador] = new Pelicula(titulo, anyo, duracion, gen, cal);
                     System.out.println(pelicula[contador]);
 
                     System.out.println("=================");
-
-                    /*for ( Pelicula peli : pelicula ){
-                        if (peli == null) {
-                            System.out.println(peli + ": vacio");
-                        }else {
-                            System.out.println(peli);
-                        }
-                    }*/
-
-                    for (int i = 0; i < pelicula.length; i++) {
-                        Pelicula peli = pelicula[i];
-                        if (peli == null) {
-                            System.out.println("Posición " + i + ": vacio");
-                        } else {
-                            System.out.println("Posición " + i + ": " + peli);
-                        }
-                    }
+                    verCartelera(pelicula);
 
                     contador++;
                     break;
 
                 case 2:
                     System.out.println("ver salas");
-                    for ( Pelicula peli : pelicula ){
-                        if (peli == null) {
-                            System.out.println(peli + ": vacio");
-                        }else {
-                            System.out.println(peli);
-                        }
-                    }
+                    visualizar(pelicula);
 
                     System.out.print("Elige sala a borrar: ");
                     int sal = Integer.parseInt(br.readLine());
 
                     pelicula[sal] = null;
 
-
-                    for ( Pelicula peli : pelicula ){
-                        if (peli == null) {
-                            System.out.println(peli + ": vacio");
-                        }else {
-                            System.out.println(peli);
-                        }
-                    }
+                    visualizar(pelicula);
 
                     System.out.println("Borrado exitosos");
 
                     break;
 
                 case 3:
-                    System.out.println("hola");
+                    visualizar(pelicula);
                     break;
 
                 case 4:
@@ -194,8 +179,6 @@ public class Main {
                 default:
                     System.out.println("Opcion no valido");
                     break;
-
-
             }
 
         }

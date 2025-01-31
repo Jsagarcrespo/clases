@@ -10,6 +10,7 @@ public class Pelicula {
         this.duracion = duracion;
         this.genero = genero;
         this.calificacion = calificacion;
+
     }
 
     public String getTitulo() {
