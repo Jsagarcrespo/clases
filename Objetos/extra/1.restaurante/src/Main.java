@@ -15,7 +15,7 @@ public class Main {
         Restaurante[] restaurante = new Restaurante[10];
 
         //necesito inicializarlo porque sino en la opcion 6 me salta al hacer el bucle
-        Valoracion[] valoracions = new Valoracion[10];
+       // Valoracion[] valoracions = new Valoracion[10];
 
         do {
 
