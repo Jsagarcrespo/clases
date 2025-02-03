@@ -1,4 +1,4 @@
-public class Restaurante {
+    public class Restaurante {
 
     private String nombre;
     private boolean estrellaMichelin;

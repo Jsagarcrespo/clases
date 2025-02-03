@@ -24,7 +24,7 @@ class Valoracion {
 Restaurante "1" - "*" Valoracion
 
 @enduml
-```
+    ```
 
 El programa mostrará un menú como el siguiente:
 
