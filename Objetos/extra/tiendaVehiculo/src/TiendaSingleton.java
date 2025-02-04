@@ -42,14 +42,14 @@ public class TiendaSingleton {
     }
 
     public void anyadirVehiculo(Vehiculo ve){
-        if (this.contador < 10){
-            this.vehiculo[this.contador] = ve;
-            this.contador++;
+        if (this.numVehiculos < 10){
+            this.vehiculo[this.numVehiculos] = ve;
+            this.numVehiculos++;
         }
     }
 
     public void listarVehiculos() {
-        for (int i = 0; i < this.contador; i++) {
+        for (int i = 0; i < this.numVehiculos; i++) {
             vehiculo[i].vendible();
         }
     }

@@ -49,10 +49,15 @@ public class Main {
                     switch (tipoVehiculo){
                         case "COCHE":
                             tipoVehiculo1 = TipoVehiculo.COCHE;
+                            System.out.print("Num Puertas: ");
+                            int numPuertas = Integer.parseInt(br.readLine());
+                            
                             break;
 
                         case "MOTO":
                             tipoVehiculo1 = TipoVehiculo.MOTO;
+                            System.out.println("cilindrada");
+                            int cilindrada = Integer.parseInt(br.readLine());
                             break;
                     }
 
@@ -70,14 +75,17 @@ public class Main {
                         tiendaSingleton.getVehiculo()[i].vendible();
                     }*/
 
+                    System.out.println(cont + " " + ((cont > 1) ? "Vehiculos: " : "Vehiculo: "));
                     tiendaSingleton.listarVehiculos();
-
-
-
 
                     break;
 
                 case 3:
+
+                    System.out.print("Quires vender el vehiculo? : ");
+                    boolean vendido = br.readLine().trim().equalsIgnoreCase("si");
+
+
 
                     break;
 
