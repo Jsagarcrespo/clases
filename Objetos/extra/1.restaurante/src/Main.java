@@ -53,6 +53,7 @@ public class Main {
                     System.out.print("escribe un nombre: ");
                     nombre = br.readLine();
 
+
                     //No se puede usar un foreach porque si no nos da problemas de "NullPointeException"
                     for (int i = 0; i < contRestaurante; i++) {
                         if (nombre.equalsIgnoreCase(restaurante[i].getNombre())) {
