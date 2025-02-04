@@ -51,7 +51,7 @@ public class Main {
                             tipoVehiculo1 = TipoVehiculo.COCHE;
                             System.out.print("Num Puertas: ");
                             int numPuertas = Integer.parseInt(br.readLine());
-                            
+
                             break;
 
                         case "MOTO":
@@ -61,10 +61,10 @@ public class Main {
                             break;
                     }
 
-                        tiendaSingleton.getVehiculo()[cont] = new Vehiculo(marca, modelo, anio, precio, tipoVehiculo1);
+                        tiendaSingleton.getVehiculo()[cont] = new Vehiculo(marca, modelo, anio, precio, tipoVehiculo1 , false);
                         tiendaSingleton.anyadirVehiculo(tiendaSingleton.getVehiculo()[cont]);
 
-                        vendibles[cont] = new Vehiculo(marca, modelo, anio, precio, tipoVehiculo1);
+                        vendibles[cont] = new Vehiculo(marca, modelo, anio, precio, tipoVehiculo1, false);
 
                         cont++;
 
@@ -81,10 +81,13 @@ public class Main {
                     break;
 
                 case 3:
+                    tiendaSingleton.listarVehiculos();
+
+                    System.out.println("Que coche quieres vender");
+                    int num = Integer.parseInt(br.readLine());
 
                     System.out.print("Quires vender el vehiculo? : ");
                     boolean vendido = br.readLine().trim().equalsIgnoreCase("si");
-
 
 
                     break;
