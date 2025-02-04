@@ -5,17 +5,19 @@ public class TiendaSingleton {
     private int contador;
     private Vehiculo[] vehiculo;
 
-    public TiendaSingleton(TiendaSingleton instanacia, int numVehiculos, Vehiculo[] vehiculo) {
-        this.instanacia = instanacia;
-        this.numVehiculos = numVehiculos;
+    //CREAR INSTANCIA
+    private static TiendaSingleton instancia;
+
+    public TiendaSingleton() {
         this.vehiculo = new Vehiculo[10];
         this.contador = 0;
 
     }
-
-    private static TiendaSingleton instancia;
-
     public static TiendaSingleton getInstanacia() {
+        if (instancia == null){
+            instancia = new TiendaSingleton();
+        }
+
         return instancia;
     }
 
@@ -39,21 +41,18 @@ public class TiendaSingleton {
         this.vehiculo = vehiculo;
     }
 
-
-
-
-
-    public void añadirVehiculo(Vehiculo ve){
+    public void anyadirVehiculo(Vehiculo ve){
         if (this.contador < 10){
             this.vehiculo[this.contador] = ve;
             this.contador++;
         }
     }
 
-    public void listarVehiculos(){
+    public void listarVehiculos() {
         for (int i = 0; i < this.contador; i++) {
-            System.out.println(vehiculo[i]);
+            vehiculo[i].vendible();
         }
     }
+
 
 }

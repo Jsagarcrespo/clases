@@ -64,6 +64,6 @@ public class Vehiculo implements Vendible {
 
     @Override
     public void vendible() {
-
+            System.out.format("\n %s, %s, %d, %.2f, %s", marca, modelo, anio, precio, tipoVehiculo );
     }
 }

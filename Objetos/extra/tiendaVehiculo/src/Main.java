@@ -13,9 +13,11 @@ public class Main {
         int opt = 0;
         int cont = 0;
 
+        Vendible[] vendibles = new Vendible[10];
 
 
         do {
+            System.out.println("");
             System.out.print("1. Crear nuevo vehículo\n" +
                     "2. Listar todos los vehículos\n" +
                     "3. Vender un vehículo\n" +
@@ -37,7 +39,7 @@ public class Main {
                     int anio = Integer.parseInt(br.readLine());
 
                     System.out.print("Precio: ");
-                    int precio = Integer.parseInt(br.readLine());
+                    double precio = Double.parseDouble(br.readLine());
 
                     System.out.println("Tipo de Vehiculo (COCHE / MOTO): ");
                     String tipoVehiculo = br.readLine();
@@ -55,17 +57,23 @@ public class Main {
                     }
 
                         tiendaSingleton.getVehiculo()[cont] = new Vehiculo(marca, modelo, anio, precio, tipoVehiculo1);
-                        tiendaSingleton.añadirVehiculo(tiendaSingleton.getVehiculo()[cont]);
+                        tiendaSingleton.anyadirVehiculo(tiendaSingleton.getVehiculo()[cont]);
 
+                        vendibles[cont] = new Vehiculo(marca, modelo, anio, precio, tipoVehiculo1);
 
-
-
+                        cont++;
 
                     break;
 
                 case 2:
+                    /*for (int i = 0; i < cont; i++) {
+                        tiendaSingleton.getVehiculo()[i].vendible();
+                    }*/
 
                     tiendaSingleton.listarVehiculos();
+
+
+
 
                     break;
 
