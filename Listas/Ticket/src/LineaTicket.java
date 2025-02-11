@@ -3,20 +3,25 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LineaTicket extends Ticket{
+public class LineaTicket{
 
     private String nombre;
     private int unidad;
     private double precio, precioUnidad;
-    List<Ticket> tickets = new ArrayList<>();
+    private Ticket ticket;
 
-    public LineaTicket(LocalDate fecha, LocalDateTime hora, int numTicket, String nombre, int unidad, double precio, double precioUnidad, List<Ticket> tickets) {
-        super(fecha, hora, numTicket);
+    public LineaTicket(String nombre, int unidad, double precio, Ticket ticket) {
         this.nombre = nombre;
         this.unidad = unidad;
         this.precio = precio;
+        this.ticket = ticket;
         this.precioUnidad = precioUnidad;
-        this.tickets = new ArrayList<>();
+
+
+        //si no añado esta linea no me lo muestra por la pantalla el bucle que tengo.
+        if (ticket != null) {
+            ticket.getLineaTicket().add(this);
+        }
     }
 
     public String getNombre() {
@@ -45,5 +50,27 @@ public class LineaTicket extends Ticket{
 
     public double getPrecioUnidad(){
        return this.precio * this.unidad;
+    }
+
+    public Ticket getTicket() {
+        return ticket;
+    }
+
+    public void setTicket(Ticket ticket) {
+        this.ticket = ticket;
+    }
+
+    public void setPrecioUnidad(double precioUnidad) {
+        this.precioUnidad = precioUnidad;
+    }
+
+    @Override
+    public String toString() {
+        return "LineaTicket{" +
+                "nombre='" + nombre + '\'' +
+                ", unidad=" + unidad +
+                ", precio=" + precio +
+                ", ticket=" + ticket +
+                '}';
     }
 }

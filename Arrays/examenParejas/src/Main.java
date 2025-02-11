@@ -64,7 +64,7 @@ public class Main {
         }
     }
 
-    // FUNCIONES 
+    // FUNCIONES
 
     public static void main(String[] args) throws IOException {
 
