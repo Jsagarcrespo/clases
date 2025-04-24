@@ -44,6 +44,8 @@ public class Main {
             //CON ESTE METODO SE ME DUPLICA
             // lineaTicket = new LineaTicket(nombre, unidad, precio, ticket);
 
+            // PODEMOS HACERLO DE ESTA MANERA CON LO QUE EL ADD SE HARIA EN LINEATICKET O LO PODRIAMOS HACER DIRECTAMENTE Y QUITARLO DE LINEATICKET: 
+            // ticket.getLineaTicketList().add(new LineaTicket(nombre, unidad, precio, ticket));
             new LineaTicket(nombre, unidad, precio, ticket);
 
             System.out.print("quieres salir: ");
