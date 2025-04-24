@@ -10,6 +10,8 @@ public class Empresa {
     public Empresa(String nombre, LocalDate fechaFundacion) {
         this.nombre = nombre;
         this.fechaFundacion = fechaFundacion;
+        // No olvidarse de esta parte porque si no da: 
+        //Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because the return value of "Empresa.getEmpleados()" is null
         this.empleados = new ArrayList<>();
     }
 
