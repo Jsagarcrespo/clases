@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/7gui/1.Login/1.Login.iml" filepath="$PROJECT_DIR$/7gui/1.Login/1.Login.iml" />
       <module fileurl="file://$PROJECT_DIR$/Objetos/1.tajetaEmbarque/1.tajetaEmbarque.iml" filepath="$PROJECT_DIR$/Objetos/1.tajetaEmbarque/1.tajetaEmbarque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/2.1.EmpresaEmpleados/2.EmpresaEmpleados.iml" filepath="$PROJECT_DIR$/Listas/2.1.EmpresaEmpleados/2.EmpresaEmpleados.iml" />
       <module fileurl="file://$PROJECT_DIR$/Objetos/2.Robot/2.Robot.iml" filepath="$PROJECT_DIR$/Objetos/2.Robot/2.Robot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7gui/2.TresEnRaya/2.TresEnRaya.iml" filepath="$PROJECT_DIR$/7gui/2.TresEnRaya/2.TresEnRaya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/3.AlumnosAsignaturas/3.AlumnosAsignaturas.iml" filepath="$PROJECT_DIR$/Listas/3.AlumnosAsignaturas/3.AlumnosAsignaturas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7gui/3.GeneradorNumero/3.GeneradorNumero.iml" filepath="$PROJECT_DIR$/7gui/3.GeneradorNumero/3.GeneradorNumero.iml" />
       <module fileurl="file://$PROJECT_DIR$/Objetos/3.pooAlumno/3.pooAlumno.iml" filepath="$PROJECT_DIR$/Objetos/3.pooAlumno/3.pooAlumno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7gui/4.GestionProductos/4.GestionProductos.iml" filepath="$PROJECT_DIR$/7gui/4.GestionProductos/4.GestionProductos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Objetos/4.cronometro/4.cronometro.iml" filepath="$PROJECT_DIR$/Objetos/4.cronometro/4.cronometro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/4.cuentaBancaria/4.cuentaBancaria.iml" filepath="$PROJECT_DIR$/Listas/4.cuentaBancaria/4.cuentaBancaria.iml" />
       <module fileurl="file://$PROJECT_DIR$/Objetos/5.GrupoAlumnos/5.GrupoAlumnos.iml" filepath="$PROJECT_DIR$/Objetos/5.GrupoAlumnos/5.GrupoAlumnos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/5.MayorOmenor/5.MayorOmenor.iml" filepath="$PROJECT_DIR$/Listas/5.MayorOmenor/5.MayorOmenor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Objetos/6.CarreraPopular/6.CarreraPopular.iml" filepath="$PROJECT_DIR$/Objetos/6.CarreraPopular/6.CarreraPopular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/6.ContactoWhass/6.ContactoWhass.iml" filepath="$PROJECT_DIR$/Listas/6.ContactoWhass/6.ContactoWhass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/1.Ticket/Ticket.iml" filepath="$PROJECT_DIR$/Listas/1.Ticket/Ticket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Objetos/extra/TicketB/TicketB.iml" filepath="$PROJECT_DIR$/Objetos/extra/TicketB/TicketB.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/clases.iml" filepath="$PROJECT_DIR$/.idea/clases.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/histrograma/histrograma.iml" filepath="$PROJECT_DIR$/Arrays/histrograma/histrograma.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Arrays/ordenarArray/ordenarArray.iml" filepath="$PROJECT_DIR$/Arrays/ordenarArray/ordenarArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Objetos/extra/TicketA/TicketA.iml" filepath="$PROJECT_DIR$/Objetos/extra/TicketA/TicketA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/alumnosYasignaturas_2/Proyecto.iml" filepath="$PROJECT_DIR$/Listas/alumnosYasignaturas_2/Proyecto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/colecion_alarma/Proyecto.iml" filepath="$PROJECT_DIR$/Listas/colecion_alarma/Proyecto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/colecionPersonas/Proyecto.iml" filepath="$PROJECT_DIR$/Listas/colecionPersonas/Proyecto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listas/Empresa_Empleado_herencia/Proyecto.iml" filepath="$PROJECT_DIR$/Listas/Empresa_Empleado_herencia/Proyecto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Objetos/extra/Cargador/Cargador.iml" filepath="$PROJECT_DIR$/Objetos/extra/Cargador/Cargador.iml" />
+
+
     </modules>
   </component>
 </project>

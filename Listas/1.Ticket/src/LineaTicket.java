@@ -9,6 +9,7 @@ public class LineaTicket{
     private int unidad;
     private double precio, precioUnidad;
     private Ticket ticket;
+    private int cont = 0;
 
     public LineaTicket(String nombre, int unidad, double precio, Ticket ticket) {
         this.nombre = nombre;
@@ -19,10 +20,15 @@ public class LineaTicket{
 
 
         //si no añado esta linea no me lo muestra por la pantalla el bucle que tengo.
-        if (ticket != null) {
+        /*if (ticket != null) {
             ticket.getLineaTicket().add(this);
-        }
+        }*/
     }
+
+    public double sumaTotal() {
+        return this.precio * this.unidad;
+    }
+
 
     public String getNombre() {
         return nombre;

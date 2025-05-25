@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -26,7 +27,7 @@ public class Main {
 
         //CON ESTE METODO SE ME DUPLICA
 
-       // LineaTicket lineaTicket = null;
+        //List<LineaTicket> lineaTickets = new ArrayList<>();
 
         System.out.println(ticket);
 
@@ -44,9 +45,10 @@ public class Main {
             //CON ESTE METODO SE ME DUPLICA
             // lineaTicket = new LineaTicket(nombre, unidad, precio, ticket);
 
-            // PODEMOS HACERLO DE ESTA MANERA CON LO QUE EL ADD SE HARIA EN LINEATICKET O LO PODRIAMOS HACER DIRECTAMENTE Y QUITARLO DE LINEATICKET: 
-            // ticket.getLineaTicketList().add(new LineaTicket(nombre, unidad, precio, ticket));
-            new LineaTicket(nombre, unidad, precio, ticket);
+            // PODEMOS HACERLO DE ESTA MANERA CON LO QUE EL ADD SE HARIA EN LINEATICKET(sin necesidad de ponerlo en la linea 21-23 en LineaTickect.java)
+            // O LO PODRIAMOS HACER DIRECTAMENTE Y QUITARLO DE LINEATICKET:
+             ticket.getLineaTicket().add(new LineaTicket(nombre, unidad, precio, ticket));
+            //new LineaTicket(nombre, unidad, precio, ticket);
 
             System.out.print("quieres salir: ");
             respuesta = br.readLine();
@@ -57,13 +59,18 @@ public class Main {
         double tl = 0;
 
         for (LineaTicket linea : ticket.getLineaTicket()) {
-            double totalLinea = linea.getPrecio() * linea.getUnidad();
+            // double totalLinea = linea.getPrecio() * linea.getUnidad();
+            tl += linea.sumaTotal();
             System.out.printf("\nProducto: %s \n" +
                             "Unidades: %d \n" +
-                            "Precio Total: %.2f",
+                            "Precio suma unidad: %.2f\n" +
+                            "Precio total: %.2f",
+
                     linea.getNombre(),
                     linea.getUnidad(),
-                    totalLinea);
+                    linea.sumaTotal(),
+                    tl/*,
+                    totalLinea*/);
 
             //CON ESTE METODO SE ME DUPLICA
 
@@ -71,7 +78,7 @@ public class Main {
             System.out.println(totalLinea);*/
 
 
-            tl += totalLinea;
+            /*tl += totalLinea;*/
         }
     }
 }

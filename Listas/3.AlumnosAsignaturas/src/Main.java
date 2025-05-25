@@ -42,7 +42,6 @@ public class Main {
                     Alumno alumno = new Alumno(nom, ape, email);
                     alumnos.add(alumno);
 
-
                     break;
 
                 case 2:
@@ -59,7 +58,6 @@ public class Main {
                     asignaturas.add(asignatura);
 
                     //asignaturas.add(new Asignatura(nomAsig,horas));
-
 
                     break;
 
@@ -115,7 +113,6 @@ public class Main {
                                 a.getNombre(),
                                 a.getApellidos(),
                                 a.getEmail());
-
                     }
                     break;
 
@@ -143,7 +140,6 @@ public class Main {
                                         "horas semanales: %d\n ",
                                 a.getNombre(),
                                 a.getHorasSemanles());
-
                     }
                     break;
 
@@ -152,12 +148,8 @@ public class Main {
 
                 default:
                     break;
-
-
             }
-
         } while (opt != 6);
-
 
     }
 
@@ -180,6 +172,5 @@ public class Main {
         }
         return null;
     }
-
 
 }
